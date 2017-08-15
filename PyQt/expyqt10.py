@@ -11,7 +11,7 @@ class Example(QMainWindow):
         textEdit  = QTextEdit()
         self.setCentralWidget(textEdit)
 
-        exitAction = QAction(QIcon('fire'),'Exit',self)
+        exitAction = QAction(QIcon('./icon/fire'),'Exit',self)
         exitAction.setShortcut('Alt+Q')
         exitAction.setStatusTip('Exit App')
         exitAction.triggered.connect(self.close)
@@ -27,7 +27,7 @@ class Example(QMainWindow):
 
         self.setGeometry(300,300,300,200)
         self.setWindowTitle('XiaoZhuGe')
-        self.setWindowIcon(QIcon('wings'))
+        self.setWindowIcon(QIcon('./icon/wings'))
         self.show()
 
 if __name__ == '__main__':
